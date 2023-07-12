@@ -1,0 +1,205 @@
+.materials {
+  /* padding: 0 30%; */
+  /* border: 2px solid black; */
+}
+.materials .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.materials .top i {
+  font-size: 24px;
+}
+.materials .top p.title {
+  font-size: 26px;
+  font-weight: bolder;
+}
+.materials .desc-total {
+  display: grid;
+  gap: 50px;
+  grid-template-areas: "left right";
+  grid-template-columns: 3fr 1fr;
+}
+.materials .desc-total .description {
+  box-sizing: border-box;
+  align-self: start;
+  grid-area: left;
+  background-color: white;
+  padding: 20px;
+}
+.materials .desc-total .description .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.materials .desc-total .description .title p.text,
+.materials .desc-total .description .title i {
+  font-weight: bold;
+  font-size: 16px;
+}
+.materials .desc-total .description p.value {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: justify;
+}
+.materials .desc-total .total {
+  align-self: start;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  grid-area: right;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 10px;
+  gap: 10px;
+  font-weight: bold;
+  height: 150px;
+}
+.materials .desc-total .total p.length {
+  font-size: 38px;
+}
+.materials .desc-total .total p.subtitle {
+  font-size: 20px;
+}
+
+.materials .add {
+  margin-top: 50px;
+}
+.materials .add button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 20px;
+  padding: 5px 20px;
+  color: #727dbe;
+  border: 3px solid #727dbe;
+  border-radius: 10px;
+  background-color: #eeedfb;
+  cursor: pointer;
+}
+
+.materials .list-materials {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.materials .list-materials .title,
+.materials .list-materials .value {
+  font-size: 18px;
+  display: grid;
+  grid-template-columns: 2fr 4fr 1fr 0.7fr;
+  gap: 10px;
+}
+.materials .list-materials .title {
+  font-weight: bolder;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+}
+.materials .list-materials .value {
+  margin-top: 20px;
+  background-color: #727dbe;
+  color: white;
+  padding: 10px 5px;
+  border-radius: 10px;
+  border: 2px solid black;
+  text-align: justify;
+  transition: 1s;
+}
+.materials .list-materials .value:hover {
+  background-color: #4859bb;
+}
+.materials .list-materials .value .name {
+  display: flex;
+  align-self: start;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.materials .list-materials .value .text p.bold {
+  color: white;
+  font-weight: bolder;
+}
+.materials .list-materials .value .text p.text {
+  color: rgb(234, 255, 0);
+}
+
+.materials .list-materials .btn {
+  font-size: 20px;
+  display: flex;
+  align-self: start;
+  align-items: center;
+  justify-content: space-around;
+}
+.materials .list-materials .btn i {
+  cursor: pointer;
+}
+
+/* ------------------------------------------------ */
+@media (max-width: 1024px) {
+  .materials .desc-total {
+    gap: 20px;
+  }
+}
+@media (max-width: 912px) {
+  .materials .top {
+    margin: 20px 0;
+  }
+  .materials .desc-total {
+    gap: 5 px;
+  }
+}
+@media (max-width: 768px) {
+  .materials .top i {
+    font-size: 18px;
+  }
+  .materials .top p.title {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .materials .list-materials .value {
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 480px) {
+  .materials .desc-total .description p.value {
+    font-size: 10px;
+  }
+  .materials .desc-total .description .title p.text,
+  .materials .desc-total .description .title i {
+    font-size: 13px;
+  }
+  .materials .desc-total .total {
+    height: 70px;
+  }
+  .materials .desc-total .total p.length {
+    font-size: 20px;
+  }
+  .materials .desc-total .total p.subtitle {
+    font-size: 13px;
+  }
+  .materials .add {
+    margin-top: 20px;
+  }
+  .materials .add button {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .materials .list-materials {
+    margin-top: 10px;
+  }
+
+  .materials .list-materials .title {
+    display: none;
+  }
+}

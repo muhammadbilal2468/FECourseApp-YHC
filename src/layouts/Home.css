@@ -1,0 +1,87 @@
+.home {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+.home .header {
+  box-sizing: border-box;
+  /* position: fixed; */
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 20px 150px;
+  /* border: 1px solid black; */
+}
+.home .header p.logo {
+  font-size: 32px;
+  font-weight: bold;
+}
+.home .header .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.home .header .user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.home .header .user p.name {
+  font-size: 18px;
+  font-weight: bold;
+}
+.home .content {
+  box-sizing: border-box;
+  position: absolute;
+  background-color: #eeedfb;
+  padding: 20px 150px;
+  margin-top: 90px;
+  min-height: 90vh;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+
+/* ------------------------------------------------ */
+@media (max-width: 1024px) {
+  .home .header,
+  .home .content {
+    padding: 20px 50px;
+  }
+}
+@media (max-width: 912px) {
+  .home .header,
+  .home .content {
+    padding: 10px 40px;
+  }
+}
+@media (max-width: 768px) {
+  .home .header,
+  .home .content {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 480px) {
+  .home .header,
+  .home .content {
+    padding: 10px 20px;
+  }
+  .home .header p.logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .home .header .user {
+    gap: 5px;
+  }
+  .home .header .user img {
+    width: 30px;
+    height: 30px;
+  }
+}

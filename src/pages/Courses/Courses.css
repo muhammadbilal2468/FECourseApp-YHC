@@ -1,0 +1,211 @@
+.courses {
+  display: flex;
+  flex-direction: column;
+}
+.courses .search {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+}
+.courses .search input {
+  box-sizing: border-box;
+  height: 30px;
+  width: 30%;
+  padding: 2px 10px;
+  border-radius: 7px;
+  border: none;
+  font-size: 16px;
+}
+.courses .search button {
+  padding: 2px 0;
+  width: 10%;
+  border-radius: 7px;
+  height: 30px;
+  border: none;
+  background-color: #727dbe;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.courses .add {
+  margin-top: 50px;
+}
+.courses .add button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 20px;
+  padding: 5px 20px;
+  color: #727dbe;
+  border: 3px solid #727dbe;
+  border-radius: 10px;
+  background-color: #eeedfb;
+  cursor: pointer;
+}
+
+.courses .list-course {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.courses .list-course .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #000;
+  background-color: white;
+  padding: 20px 30px;
+  height: 220px;
+  border-right: 8px solid #727dbe;
+}
+.courses .list-course .card:hover {
+  border-style: inset;
+  box-shadow: -1px -1px 5px #000;
+}
+
+.courses .list-course .card .top {
+  display: flex;
+  justify-content: space-between;
+}
+.courses .list-course .card .top p.icon {
+  padding: 5px 15px;
+  font-weight: bold;
+  color: white;
+  font-size: 30px;
+  border-radius: 10px;
+  background-color: #727dbe;
+}
+
+.courses .list-course .card .top p.duration {
+  font-style: italic;
+  font-size: 16px;
+}
+.courses .list-course .card .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.courses .list-course .card .bottom .left .name {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.courses .list-course .card .bottom .left .price {
+  font-size: 16px;
+}
+.courses .list-course .card .bottom .left button {
+  margin-top: 5px;
+  padding: 3px 30px;
+  font-size: 16px;
+  font-weight: bolder;
+  background-color: white;
+  border-radius: 8px;
+  color: #727dbe;
+  border: 2px solid #727dbe;
+  cursor: pointer;
+}
+.courses .list-course .card .bottom i.fa-ellipsis,
+.courses .list-course .card .bottom .btn {
+  align-self: end;
+  font-size: 25px;
+  cursor: pointer;
+}
+.courses .list-course .card .bottom .btn {
+  display: flex;
+  gap: 20px;
+  color: #727dbe;
+}
+
+/* ---------------- */
+.courses .list-course .card .top p.icon.biru {
+  background-color: #727dbe;
+}
+.courses .list-course .card .top p.icon.merah {
+  background-color: #fe7272;
+}
+.courses .list-course .card .top p.icon.pink {
+  background-color: #fbaaec;
+}
+.courses .list-course .card .top p.icon.hijau {
+  background-color: #b8ffc0;
+}
+.courses .list-course .card .top p.icon.kuning {
+  background-color: #f1ff98;
+}
+.courses .list-course .card .top p.icon.orens {
+  background-color: #ffb189;
+}
+.courses .list-course .card .top p.icon.abu-abu {
+  background-color: #b0b0b0;
+}
+
+.courses .list-course .card.biru {
+  border-right: 8px solid #727dbe;
+}
+.courses .list-course .card.merah {
+  border-right: 8px solid #fe7272;
+}
+.courses .list-course .card.pink {
+  border-right: 8px solid #fbaaec;
+}
+.courses .list-course .card.hijau {
+  border-right: 8px solid #b8ffc0;
+}
+.courses .list-course .card.kuning {
+  border-right: 8px solid #f1ff98;
+}
+.courses .list-course .card.orens {
+  border-right: 8px solid #ffb189;
+}
+.courses .list-course .card.abu-abu {
+  border-right: 8px solid #b0b0b0;
+}
+
+/* -------------------- RESPONSIVE ---------------------- */
+@media (max-width: 1024px) {
+}
+@media (max-width: 912px) {
+  .courses .list-course {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .courses .search {
+    gap: 0px;
+  }
+  .courses .search input {
+    width: 80%;
+  }
+  .courses .search button {
+    width: 20%;
+  }
+}
+@media (max-width: 768px) {
+  .courses .list-course {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+  .courses .search input {
+    font-size: 14px;
+    width: 80%;
+  }
+  .courses .search button {
+    font-size: 14px;
+    width: 20%;
+  }
+}
+@media (max-width: 480px) {
+  .courses .add button {
+    font-size: 14px;
+  }
+}
